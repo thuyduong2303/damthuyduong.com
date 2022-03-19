@@ -11,6 +11,7 @@ body {
   font-family:poppins;
   color: #fff;
   overflow-x: hidden;
+  overflow-y: scroll;
   width: 100%;
   height: 100%;
   font-size: 14px;
@@ -18,6 +19,7 @@ body {
   background-color: #fff;
   /* background-image: url(../images/paper-texture.jpg); */
   color: #12566d;
+  position: relative;
 }
 
 :hover,
@@ -70,9 +72,9 @@ a:hover {
   -webkit-text-decoration-line: unset;
   text-decoration-line: unset;
   }
-  a[href]{
+  /* a[href]{
     color: #12566d;
-  }
+  } */
 ul {
 padding: 0;
 margin: 0;
@@ -147,7 +149,7 @@ left: 0;
   margin-left: 12px;
   background: #FFB906;
   box-shadow: 0px 0px 5px #ffb443, 0px 0px 18px #ffa143;
-  animation: lightAnimation 1.5s ease-in-out infinite;
+  animation: brightness 1.5s ease-in-out infinite;
 }
 .circle:before {
   content: '';
@@ -181,16 +183,19 @@ left: 0;
 .logo a{
   color: #f592a1;
 }
+h1.logo{
+  font-size: unset;
+}
 .header .logo img{
-  max-width: 214px;
+  max-width: 9vw;
 }
 .header button{
   min-width: 92px;
 }
-.nav-main li a{
+/* .nav-main li a{
  text-transform: uppercase;
  color: #12566d;
-}
+} */
 .header ul li{
 
 }
@@ -222,28 +227,22 @@ left: 0;
 }
 .el__headline::before{
   content:"";
-  /* background: #fcf4dd;
-  height: 0.875rem; 
-  width: 0.875rem;
-  position: absolute;
-  top: 50%;
-  left: 0;
-  transform: translate(0%,-50%); */
-
   position: relative;
   display: inline-block;
   border-radius: 50%;
-  width: 8px;
-  height: 8px;
+  width: 6px;
+  height: 6px;
   position: absolute;
   top: 50%;
   left: 0;
   transform: translate(0%,-50%);
-  background: #FFB906;
-  box-shadow: 0px 0px 5px #ffb443, 0px 0px 18px #ffa143;
-  animation: lightAnimation 1.5s ease-in-out infinite;
+  /* background: url(../images/flower.png) no-repeat;
+  background-size: 100%; */
+  background: #f592a1;
+  box-shadow: 0px 0px 5px #f37588, 0px 0px 18px #eb7082;
+  animation: brightness 1.5s ease-in-out infinite;
 }
-@-webkit-keyframes lightAnimation {
+@-webkit-keyframes brightness {
 	0% {
 		-webkit-filter: brightness(1);
 		filter: brightness(1)
@@ -286,7 +285,8 @@ left: 0;
 }
 /* Begin: About */
 .bg-green{
-  background: #ddedea;
+  /* background: #ddedea; */
+  background: #ddedeaa6;
 }
 #about{
   /* background: rgb(255,255,255);
@@ -312,13 +312,21 @@ background: linear-gradient(0deg, rgba(255,255,255,0) 0%,
   margin: auto;
   text-align: center;
 }
+.el__other ul li{
+  display: inline-block;
+  max-width:  19.725%;
+  margin: auto;
+  text-align: center;
+}
+.el__other ul li img{
+  max-width: 27%;
+}
 .el__software ul li img{
   max-width: 27%;
-  animation: lightAnimation 1.5s ease-in-out infinite;
 }
 .el__software ul li:nth-child(2) img,
 .el__software ul li:nth-child(4) img{
-  animation: lightAnimation 1.95s ease-in-out infinite;
+  animation: brightness 1.95s ease-in-out infinite;
 }
 /* End: SKills */
 
@@ -326,10 +334,10 @@ background: linear-gradient(0deg, rgba(255,255,255,0) 0%,
 /* Begin: Project */
 #project .menu-tab > ul li{
   display: inline;
-  padding: 0rem 1.275rem 0.275rem 1.275rem;
-  margin: 0 -2px;
+  margin: 0rem 0.575rem 0.275rem 0.575rem;
+  /* margin: 0 -2px; */
   cursor: pointer;
-  border-bottom: 2px solid;
+  /* border-bottom: 2px solid; */
   
 }
 #project .menu-tab > ul li.active{
@@ -622,7 +630,37 @@ background: linear-gradient(0deg, rgba(255,255,255,0) 0%,
   right: 100px;
   z-index: 999;
 }
-
+/* Project Graphic */
+/* .grap__image-horiz--image{
+  max-width: 600px;
+}
+.grap__image-horiz--color ul li {
+  display: inline-block;
+}
+.grap__image-horiz--circle-color{
+  width: 2vw;
+  height: 2vw;
+  border-radius: 100%;
+  margin: 0 0.75vw;
+}
+.grap__image-horiz--circle-color.c-d41d22{
+  background-color: #d41d22;
+}
+.grap__image-horiz--circle-color.c-f7d359{
+  background-color: #f7d359;
+}
+.grap__image-horiz--circle-color.c-67bba1{
+  background-color: #67bba1;
+} */
+.grap__image-horiz ul li{
+  position: relative;
+  display: inline-block;
+  max-width: 30%;
+  margin: 1%;
+}
+.grap__branding--bussiness-card ul li{
+  margin: 0 1rem
+}
 /* End: Project */
 
 /* Begin: Contact */
