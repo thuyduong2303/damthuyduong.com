@@ -110,6 +110,9 @@ left: 0;
 .mt-8{
   margin-top: 8rem;
 }
+.cus-mb{
+  margin-bottom: 5rem
+}
 .w-85{
   max-width: 85%;
 }
@@ -192,13 +195,11 @@ h1.logo{
 .header button{
   min-width: 92px;
 }
-/* .nav-main li a{
+.nav-main li a{
  text-transform: uppercase;
  color: #12566d;
-} */
-.header ul li{
-
 }
+
 /* End: Menu */
 .el__title{
   text-transform: uppercase;
