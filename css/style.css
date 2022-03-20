@@ -375,55 +375,8 @@ background: linear-gradient(0deg, rgba(255,255,255,0) 0%,
 .el_dev .el_dev__slide li > div{
 
 }
-.slick-slider .slick-prev::before {
-  content: "";
-  display: block;
-  position: absolute;
-  background: url(../images/prev.png) top center no-repeat;
-  width: 35px;
-  height: 45px;
-  background-size: contain;
-  cursor: pointer;
-  /* transform: translateY(-40px); */
-}
-.slick-slider .slick-next::before {
-  content: "";
-  display: block;
-  position: absolute;
-  background: url(../images/next.png) top center no-repeat;
-  width: 35px;
-  height: 45px;
-  background-size: contain;
-  cursor: pointer;
-  /* transform: translateY(-40px); */
-}
-.slick-slider .slick-next {
-  position: absolute;
-  right: -10%;
-  top: 45%;
-  transform: translate(0, -50%);
-  color: transparent;
-  background: transparent;
-  outline: transparent;
-  border: transparent;
-}
-.slick-slider .slick-prev {
-  position: absolute;
-  left: -10%;
-  top: 45%;
-  transform: translate(0, -50%);
-  color: transparent;
-  background: transparent;
-  outline: transparent;
-  border: transparent;
-}
-.el_dev__menu .slick-arrow:hover{
-  opacity: 1;
-  transition: 0.3s cubic-bezier(0.075, 0.82, 0.165, 1);
-}
-.el_dev__menu .slick-arrow{
-  opacity: 0.5;
-}
+
+
 .pr__main{
   position: relative;
 }

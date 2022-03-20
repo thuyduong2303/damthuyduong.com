@@ -41,4 +41,17 @@ $(document).ready(function(){
 	// 	slidesToScroll: 1,
     //     centerPadding: '60px',
 	//   });
+		
+	if ($(window).width() <= 992) {
+		$('.project-slider').slick();
+	}
+
+	$(window).resize(function() {
+		if ($(window).width() <= 992) {
+			$('.project-slider').slick();
+		} else {
+			$('.project-slider').slick('unslick');
+		}
+	})
+
 });
