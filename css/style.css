@@ -66,7 +66,7 @@ a {
 -webkit-transition: 0.3s;
 transition: 0.3s;
 text-decoration-line: unset;
-color: #534859!important;
+color: #534859;
 }
 a:hover {
   -webkit-text-decoration-line: unset;
@@ -271,10 +271,14 @@ h1.logo{
 .btn-contact{
   box-shadow: 0 .5rem 1rem rgba(0,0,0,.15);
   background-color: #f9698d;
+  color: #fff;
   padding: 0.25rem 0.5rem;
     font-size: .875rem;
     border-radius: 0.2rem;
     transform: scale(1.05);
+}
+.btn-contact a{
+  color: #fff;
 }
 
 
@@ -573,7 +577,7 @@ background: linear-gradient(0deg, rgba(255,255,255,0) 0%,
   border-right: none;
 }
 .clash-card__unit-stats .link a{
-  color: #fff;
+  color: #fff!important;
   text-transform: uppercase;
   font-weight: 500;
 }
