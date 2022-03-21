@@ -110,6 +110,9 @@ left: 0;
 .mt-8{
   margin-top: 8rem;
 }
+.mb-8{
+  margin-bottom: 8rem;
+}
 .cus-mb{
   margin-bottom: 5rem
 }
@@ -602,27 +605,24 @@ background: linear-gradient(0deg, rgba(255,255,255,0) 0%,
   z-index: 999;
 }
 /* Project Graphic */
-/* .grap__image-horiz--image{
-  max-width: 600px;
+.graphic-main-tab{
+  border: unset
 }
-.grap__image-horiz--color ul li {
-  display: inline-block;
+.graphic-main-tab .nav-link{
+  border: unset;
+  color:#534859;
+  padding: 0.275rem 1.725rem;
 }
-.grap__image-horiz--circle-color{
-  width: 2vw;
-  height: 2vw;
-  border-radius: 100%;
-  margin: 0 0.75vw;
+.graphic-main-tab .nav-link.active{
+  border-bottom: 3px solid #f9698d;
 }
-.grap__image-horiz--circle-color.c-d41d22{
-  background-color: #d41d22;
+.graphic-main-tab .nav-link:hover{
+color: #f9698d;;
 }
-.grap__image-horiz--circle-color.c-f7d359{
-  background-color: #f7d359;
+.graphic-main-tab .nav-link.button,
+.graphic-main-tab .nav-link.active:hover{
+  color:#534859;
 }
-.grap__image-horiz--circle-color.c-67bba1{
-  background-color: #67bba1;
-} */
 .grap__image-horiz ul li{
   position: relative;
   display: inline-block;
@@ -631,6 +631,17 @@ background: linear-gradient(0deg, rgba(255,255,255,0) 0%,
 }
 .grap__branding--bussiness-card ul li{
   margin: 0 1rem
+}
+.grap__image-horiz .proj-graphic__video ul li{
+  display: inline-block;
+  width: 47.5%;
+  max-width: 50%;
+  margin: 1%;
+}
+.proj-graphic__video video{
+  width: 100%;
+  margin: auto;
+  text-align: center;
 }
 /* End: Project */
 
