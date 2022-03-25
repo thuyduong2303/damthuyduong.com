@@ -661,7 +661,11 @@ color: #f9698d;;
 }
 .coppy-right{
   background: #544759;
-  color: #faf0e7;;
+  color: #faf0e7;
+  text-align: center;
+}
+.coppy-right p{
+  text-transform: uppercase;
 }
 /* End: Contact */
 /*  */
