@@ -670,3 +670,83 @@ color: #f9698d;;
 /* End: Contact */
 /*  */
 
+/* Begin: circle background */
+.absolute{
+  position: absolute;
+}
+.ani-brightness{
+  animation: brightness 1.95s ease-in-out infinite;
+}
+.ani-move{
+  -webkit-animation: ani_up1 2s linear infinite;
+  animation: ani_up 2s linear infinite;
+}
+.effect-fade{
+  transition: 0.5s;
+  -webkit-animation: effect-fade 2s linear infinite;
+  animation: effect-fade 2s linear infinite;
+}
+@keyframes effect-fade {
+  0% {opacity:1; transform:scale(1);}
+ 50% {opacity:1; transform:scale(0.9);}
+100% {opacity:1; transform:scale(1);}
+}
+@-webkit-keyframes ani_up{
+  from {-webkit-transform:translate(0, 0);}
+  65% {-webkit-transform:translate(0, -10px);}
+  to {-webkit-transform: translate(0, 0);}
+}
+ 
+@-moz-keyframes ani_up{
+  from {-moz-transform:translate(0, 0);}
+  65% {-moz-transform:translate(0, -10px);}
+  to {-moz-transform: translate(0, 0);}
+}
+.circle-pink{
+  top: 50%;
+  left: 0;
+  background-color: #eb7082;
+  width: 30vw;
+  height: 30vw;
+  z-index: -1;
+  border-radius: 100%;
+  filter: blur(8vw);
+  opacity: 0.2;
+  transform: translateX(-5vw);
+}
+.circle-nude{
+  background-color: #faf0e7;
+  top: 15%;
+  left: 0;
+  width: 20vw;
+  height: 20vw;
+  z-index: -1;
+  border-radius: 100%;
+  filter: blur(4vw);
+  opacity: 1;
+  transform: translateX(-5vw);
+}
+.circle-nude--right{
+  background-color: #faf0e7;
+  top: 20%;
+  right: 5%;
+  width: 32vw;
+  height: 32vw;
+  z-index: -1;
+  border-radius: 100%;
+  filter: blur(6vw);
+  opacity: 1;
+}
+.circle-pink--right{
+  background-color: #f9698d;
+  top: 35%;
+  right: 10%;
+  width: 36vw;
+  height: 36vw;
+  z-index: -1;
+  border-radius: 100%;
+  filter: blur(10vw);
+  opacity: 0.15;
+  transform: translateX(24vw);
+}
+/* End: circle background */
